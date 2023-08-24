@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border-box: */
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%);
+  /* background, headings, buttons) */
+}
+/* body-15px */
+.container {
+  width: 700px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+body {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+  color: var(--very-light-gray);
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+header {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: var(--transparent-white);
+  font-size: 30px;
+  margin: 25px 0 25px;
+}
+.column {
+  /* display: flex;
+  flex-direction: column; */
+  width: 33.33%;
+  height: 450px;
+  padding: 20px;
+  position: relative;
+}
+.sedans {
+  background-color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin: 12px 0 40px 0;
+  position: absolute;
+  bottom: 0;
+}
+.sedan-button {
+  color: var(--bright-orange);
+}
+.sedan-button:hover {
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+}
+.suvs-button {
+  color: var(--dark-cyan);
+}
+.suvs-button:hover {
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+}
+.luxury-button {
+  color: var(--very-dark-cyan);
+}
+.luxury-button:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+}
